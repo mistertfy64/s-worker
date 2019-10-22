@@ -26,8 +26,7 @@ var XWorkersBought = 0;
 var XWorkersMultiplier = 1;
 
 
-	
-	
+
 	
 
 //ProductionDisplayAndUpdate
@@ -76,6 +75,7 @@ var XWorkersMultiplier = 1;
 		var XWorkerNextCost = Math.floor(Math.pow(XWorkersBought, 1.75) + 5);
 		document.getElementById("XWorkerCost").innerHTML = XWorkerNextCost;
 	};
+	
 	
 	
 	

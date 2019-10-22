@@ -1,26 +1,35 @@
 <link rel="stylesheet" type="text/css" href="interface.css" />
 <!--- InterfaceZone -->
-<h1 style="text-align: center;"><strong>S-Worker</strong></h1>
+<h2 style="text-align: center;"><strong>S-Worker</strong></h1>
+<h2 style="text-align: center;">created by mistertfy69</h2>
 
-<h2><strong>$<span id=Money>0</span></strong></h2>
+<h1 style="text-align: center;"><strong>$<span id=Money>0</span></strong></h2>
 
 <button onClick="clickMoney(1)"> Click me for money </button>
 <br>
 </br>
-<span id=Tick>1000</span>ms <button onClick="TickUpgrade(1)"> Click me to upgrade tickspeed </button> $<span id=TickUpgradeCost>10</span>
-<!--- WorkerZone -->
-<br>
-</br>
-<br>
-</br>
-$<span id=ZWorkersProduction>0</span>/s <span id=ZWorkers>0</span> <button onClick="ZWorkerBuy(1)"> Click me for a Z-Worker </button> $<span id=ZWorkerCost>6</span>
-<br></br>
-<span id=YWorkersProduction>0</span> Z-Workers/s <span id=YWorkers>0</span> <button onClick="YWorkerBuy(1)"> Click me for a Y-Worker </button> <span id=YWorkerCost>14</span> Z-Workers
-<br></br>
-<span id=XWorkersProduction>0</span> Y-Workers/s <span id=XWorkers>0</span> <button onClick="XWorkerBuy(1)"> Click me for a X-Worker </button> <span id=XWorkerCost>5</span> Y-Workers
-<br></br>
 
+<!--- WorkerZone -->
+</div>
+<div id="interface">
+<span id=Tick>1000</span>ms <button onClick="TickUpgrade(1)"> Click me to upgrade tickspeed </button> $<span id=TickUpgradeCost>10</span>
+<br></br>
+<br></br>
+<p class="interface_worker">$<span id=ZWorkersProduction>0</span> per tick made by <span id=ZWorkers>0</span> Z-Workers</p> <button class="Worker_Buy" onClick="ZWorkerBuy(1)"> $<span id=ZWorkerCost>6</span></button> 
+<br></br>
+<br></br>
+<p class="interface_worker"><span id=YWorkersProduction>0</span> Z-Workers per tick made by <span id=YWorkers>0</span> Y-Workers</p> <button class="Worker_Buy" onClick="YWorkerBuy(1)"> <span id=YWorkerCost>14</span> Z-Workers </button> 
+<br></br>
+<br></br>
+<p class="interface_worker"><span id=XWorkersProduction>0</span> Y-Workers per tick made by <span id=XWorkers>0</span> X-Workers</p> <button class="Worker_Buy" onClick="XWorkerBuy(1)"> <span id=XWorkerCost>5</span> Y-Workers </button>
+<br></br>
+<br></br>
+</div>
+
+<button onClick="save()">Save</button>
+<button onClick="load()">Load</button>
 <script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="prestige.js"></script>
 <script type="text/javascript" src="production.js"></script>
 <script type="text/javascript" src="upgrade.js"></script>
+<script type="text/javascript" src="savefile.js"></script>

@@ -1,0 +1,23 @@
+h1, h2 {
+	color: black;
+	font-family: arial;
+}
+
+.worker_buy {
+	background-color: #98B7E3;
+	color: black;
+	font-family: arial;
+	padding: 15px 32px;
+	font-size: 16px;
+	position: absolute;
+	border: 3px solid #555555;
+	width: 200px;
+	right: 30px;
+}
+
+.interface_worker {
+	font-family: arial;
+	font-size: 16px;
+	position: absolute;
+	left: 30px;
+}
