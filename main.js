@@ -65,7 +65,7 @@ var XWorkersMultiplier = 1;
 	// X Cost
 	function XWorkerBuy(number){
 		var XWorkerCost = Math.floor((XWorkersBought + 1)^1.75);
-		if(ZWorkers >= YWorkerCost){
+		if(YWorkers >= XWorkerCost){
 			YWorkers = YWorkers - YWorkerCost;
 			XWorkers = XWorkers + 1;
 			YWorkersBought = YWorkersBought + 1;
