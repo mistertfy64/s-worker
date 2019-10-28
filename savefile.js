@@ -14,7 +14,12 @@ function save(){
 		YWorkersMultiplier: YWorkersMultiplier,
 		XWorkers: XWorkers,
 		XWorkersBought: XWorkersBought,
-		XWorkersMultiplier: XWorkersMultiplier
+		XWorkersMultiplier: XWorkersMultiplier,
+		WWorkers: WWorkers,
+		WWorkersBought: WWorkersBought,
+		WWorkersMultiplier: WWorkersMultiplier,
+		PrestigeMultiplier: PrestigeMultiplier,
+		UpgradeMultiplier: UpgradeMultiplier,
 	}
 localStorage.setItem("savefile",JSON.stringify(savefile));
 }
@@ -34,4 +39,9 @@ function load(){
 	if (typeof savegame.XWorkers !== "undefined") XWorkers = savegame.XWorkers;
 	if (typeof savegame.XWorkersBought !== "undefined") XWorkersBought = savegame.XWorkersBought;
 	if (typeof savegame.XWorkersMultiplier !== "undefined") XWorkersMultiplier = savegame.XWorkersMultiplier;
+	if (typeof savegame.WWorkers !== "undefined") WWorkers = savegame.WWorkers;
+	if (typeof savegame.WWorkersBought !== "undefined") WWorkersBought = savegame.XWorkersBought;
+	if (typeof savegame.WWorkersMultiplier !== "undefined") WWorkersMultiplier = savegame.WWorkersMultiplier;
+	if (typeof savegame.PrestigeMultiplier !== "undefined") PrestigeMultiplier = savegame.PrestigeMultiplier;
+	if (typeof savegame.UpgradeMultiplier !== "undefined") UpgradeMultiplier = savegame.UpgradeMultiplier;
 }

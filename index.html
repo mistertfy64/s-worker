@@ -9,9 +9,12 @@
 <br>
 </br>
 
+<button class="interface_navigation" onClick="interface_switch_workers()"> Workers </button>
+<button class="interface_navigation" onClick="interface_switch_upgrades()"> Upgrades </button>
+
 <!--- WorkerZone -->
 </div>
-<div id="interface">
+<div id="interface_workers">
 <span id=Tick>1000</span>ms <button onClick="TickUpgrade(1)"> Click me to upgrade tickspeed </button> $<span id=TickUpgradeCost>10</span>
 <br></br>
 <br></br>
@@ -21,15 +24,29 @@
 <p class="interface_worker"><span id=YWorkersProduction>0</span> Z-Workers per tick made by <span id=YWorkers>0</span> Y-Workers</p> <button class="Worker_Buy" onClick="YWorkerBuy(1)"> <span id=YWorkerCost>14</span> Z-Workers </button> 
 <br></br>
 <br></br>
-<p class="interface_worker"><span id=XWorkersProduction>0</span> Y-Workers per tick made by <span id=XWorkers>0</span> X-Workers</p> <button class="Worker_Buy" onClick="XWorkerBuy(1)"> <span id=XWorkerCost>5</span> Y-Workers </button>
+<p class="interface_worker"><span id=XWorkersProduction>0</span> Y-Workers per tick made by <span id=XWorkers>0</span> X-Workers</p> <button class="Worker_Buy" onClick="XWorkerBuy(1)"> <span id=XWorkerCost>2</span> Y-Workers </button>
 <br></br>
 <br></br>
+<p class="interface_worker"><span id=WWorkersProduction>0</span> X-Workers per tick made by <span id=WWorkers>0</span> W-Workers</p> <button class="Worker_Buy" onClick="WWorkerBuy(1)"> <span id=WWorkerCost>4</span> X-Workers </button>
 </div>
 
+<div id="interface_upgrades">
+<br></br>
+<br></br>
+<button class="interface_navigation" onClick="interface_switch_workers_workers()"> Workers </button> <button class="interface_navigation" onClick="interface_switch_workers_companies()"> Coming Soon™ </button>
+<div id="interface_upgrades_workers">
+<p class="interface_upgrades">Z-Workers mutliplier: <span id=ZWorkersMultiplier>1</span>x </p> <button class="upgrades_workers_tier1" onClick="ZWorker_Upgrade_Tier1()"> $<span id="ZUpgrade1Cost">100000</span> </button>
+</div>
+<br></br>
+<br></br>
 <button onClick="save()">Save</button>
 <button onClick="load()">Load</button>
+<br></br>
+<br></br>
+<p style="text-align: center;"><a href="https://github.com/mistertfy69/s-worker">Github</a> | <a href="https://www.patreon.com/mistertfy69">Donate</a></p>
 <script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="prestige.js"></script>
 <script type="text/javascript" src="production.js"></script>
 <script type="text/javascript" src="upgrade.js"></script>
 <script type="text/javascript" src="savefile.js"></script>
+<script type="text/javascript" src="userinterface.js"></script>

@@ -24,8 +24,13 @@ var YWorkersMultiplier = 1;
 var XWorkers = 0;
 var XWorkersBought = 0;
 var XWorkersMultiplier = 1;
-
-
+var WWorkers = 0;
+var WWorkersBought = 0;
+var WWorkersMultiplier = 1;
+var PrestigeMultiplier = 1;
+var UpgradeMultiplier = 1;
+//Dependent Variables
+var ZUpgrade1Cost = (100000 ^ ZWorkersMultiplier);
 
 	
 
@@ -64,16 +69,31 @@ var XWorkersMultiplier = 1;
 //X Worker
 	// X Cost
 	function XWorkerBuy(number){
-		var XWorkerCost = Math.floor((XWorkersBought + 1)^1.75);
+		var XWorkerCost = Math.floor(Math.pow(XWorkersBought, 1.75) + 2);;
 		if(YWorkers >= XWorkerCost){
-			YWorkers = YWorkers - YWorkerCost;
+			YWorkers = YWorkers - XWorkerCost;
 			XWorkers = XWorkers + 1;
-			YWorkersBought = YWorkersBought + 1;
+			XWorkersBought = XWorkersBought + 1;
 			document.getElementById('Money').innerHTML = Money;
 			document.getElementById('XWorkers').innerHTML = XWorkers;
 		}; //end of buying
-		var XWorkerNextCost = Math.floor(Math.pow(XWorkersBought, 1.75) + 5);
+		var XWorkerNextCost = Math.floor(Math.pow(XWorkersBought, 1.75) + 2);
 		document.getElementById("XWorkerCost").innerHTML = XWorkerNextCost;
+	};
+
+//W Worker
+		//W Cost
+	function WWorkerBuy(number){
+		var WWorkerCost = Math.floor(Math.pow(WWorkersBought, 2.5) + 4);;
+		if(XWorkers >= WWorkerCost){
+			XWorkers = XWorkers - WWorkerCost;
+			WWorkers = WWorkers + 1;
+			WWorkersBought = WWorkersBought + 1;
+			document.getElementById('Money').innerHTML = Money;
+			document.getElementById('WWorkers').innerHTML = WWorkers;
+		}; //end of buying
+		var WWorkerNextCost = Math.floor(Math.pow(WWorkersBought, 2.5) + 4);
+		document.getElementById("WWorkerCost").innerHTML = WWorkerNextCost;
 	};
 	
 	
