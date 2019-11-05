@@ -7,12 +7,12 @@ h1, h2 {
 	background-color: #CCCCCC;
 	color: black;
 	font-family: arial;
-	padding: 15px 32px;
+	padding: 8px 32px;
 	font-size: 16px;
 	position: absolute;
 	border: 3px solid #555555;
-	width: 200px;
-	right: 30px;
+	width: 275px;
+	right: 60px;
 }
 
 .interface_worker {
@@ -22,9 +22,23 @@ h1, h2 {
 	left: 30px;
 }
 
+.interface_button_money {
+	background-color: lime;
+	color: black;
+	font-family: arial;
+	padding: 8px 32px;
+	font-size: 16px;
+	position: absolute;
+	border: 3px solid #555555;
+	width: 200px;
+	left: 850px;
+}
+	
+
 .interface_navigation {
 	background-color: #CCCCCC;
 	padding: 8px 32px;
+	border: 3px solid #555555;
 	color: black;
 }
 
@@ -32,17 +46,57 @@ h1, h2 {
 	font-family: arial;
 	font-size: 16px;
 	position: absolute;
+	text-align: center;
 	left: 30px;
 }
 
-.upgrades_workers_tier1 {
+.upgrades_workers {
 	font-family: arial;
 	font-size: 16px;
-	position: absolute;
+	padding: 2px 48px;
+	background-color: #CCCCCC;
+	border: 3px soild #555555;
+	width: 325px;
+	white-space: normal;
+	word-wrap: break-word;
+	font-size: 16px;
 	left: 300px;
+	position: absolute;
+	resize: none;
+}
+
+.upgrades_tickspeed {
+	font-family: arial;
+	font-size: 16px;
+	padding: 7px 32px;
+	background-color: #CCCCCC;
+	border: 3px soild #555555;
+	text-align: center;
+	font-size: 16px;
+	left: 850px;
+	position: absolute;
+}
+
+.options_save {
+	font-family: arial;
+	font-size: 16px;
 	padding: 15px 32px;
 	background-color: #CCCCCC;
 	border: 3px soild #555555;
+	text-align: center;
+	font-size: 16px;
+	position: absolute;
 	
-};
-	
+}
+
+.options_load {
+	font-family: arial;
+	font-size: 16px;
+	padding: 15px 32px;
+	background-color: #CCCCCC;
+	border: 3px soild #555555;
+	text-align: center;
+	font-size: 16px;
+	left: 128px;
+	position: absolute;
+}
