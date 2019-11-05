@@ -12,6 +12,7 @@
 <p style="text-align: center;">
 <button class="interface_navigation" onClick="interface_switch_workers()"> Workers </button>
 <button class="interface_navigation" onClick="interface_switch_upgrades()"> Upgrades </button>
+<button class="interface_navigation" onClick="interface_switch_prestige()"> Prestige </button>
 <button class="interface_navigation" onClick="interface_switch_options()"> Options </button>
 </p>
 
@@ -20,31 +21,23 @@
 <div id="interface_workers">
 <br></br>
 <button class="interface_button_money" onClick="clickMoney(1)"> Click me for money </button>
-<br></br>
-<br></br>
+<br></br><br></br>
 <p class="interface_worker">$<span id=ZWorkersProduction>0</span> per tick made by <span id=ZWorkers>0</span> Z-Workers</p> <button class="Worker_Buy" onClick="ZWorkerBuy(1)"> $<span id=ZWorkerCost>6</span></button> 
 <br></br>
 <br></br>
 <p class="interface_worker"><span id=YWorkersProduction>0</span> Z-Workers per tick made by <span id=YWorkers>0</span> Y-Workers</p> <button class="Worker_Buy" onClick="YWorkerBuy(1)"> $<span id=YWorkerCost>4500</span></button> 
-<br></br>
-<br></br>
+<br></br><br></br>
 <p class="interface_worker"><span id=XWorkersProduction>0</span> Y-Workers per tick made by <span id=XWorkers>0</span> X-Workers</p> <button class="Worker_Buy" onClick="XWorkerBuy(1)"> $<span id=XWorkerCost>250000</span></button>
-<br></br>
-<br></br>
+<br></br><br></br>
 <p class="interface_worker"><span id=WWorkersProduction>0</span> X-Workers per tick made by <span id=WWorkers>0</span> W-Workers</p> <button class="Worker_Buy" onClick="WWorkerBuy(1)"> $<span id=WWorkerCost>31000000</span></button>
-<br></br>
-<br></br>
+<br></br><br></br>
 <p class="interface_worker"><span id=VWorkersProduction>0</span> W-Workers per tick made by <span id=VWorkers>0</span> V-Workers</p> <button class="Worker_Buy" onClick="VWorkerBuy(1)"> $<span id=VWorkerCost>800000000</span></button>
-<br></br>
-<br></br>
+<br></br><br></br>
 <p class="interface_worker"><span id=UWorkersProduction>0</span> V-Workers per tick made by <span id=UWorkers>0</span> U-Workers</p> <button class="Worker_Buy" onClick="UWorkerBuy(1)"> $<span id=UWorkerCost>182500000000</span></button>
-<br></br>
-<br></br>
+<br></br><br></br>
 <p class="interface_worker"><span id=TWorkersProduction>0</span> U-Workers per tick made by <span id=TWorkers>0</span> T-Workers</p> <button class="Worker_Buy" onClick="TWorkerBuy(1)"> $<span id=TWorkerCost>3275000000000</span></button>
-<br></br>
-<br></br>
+<br></br>br></br>
 <p class="interface_worker"><span id=SWorkersProduction>0</span> T-Workers per tick made by <span id=SWorkers>0</span> S-Workers</p> <button class="Worker_Buy" onClick="SWorkerBuy(1)"> $<span id=SWorkerCost>1250000000000000</span></button>
-
 </div>
 
 <div id="interface_upgrades"> <!--- -1 -->
@@ -53,33 +46,38 @@
 
 <div id="interface_upgrades_workers"> <!--- -2 -->
 <br></br>
-<p style="text-align: center; font-family: georgia;">worker-Worker Production = worker-Worker * M<sub>worker<sub>total</sub></sub> * M<sub>upgrade<sub>total</sub></sub> * M<sub>prestige</sub></p> 
-<p style="text-align: center; font-family: georgia;">M<sub>worker<sub>total</sub></sub> = M<sub>worker<sub>1</sub></sub> * M<sub>worker<sub>2</sub></sub> * M<sub>worker<sub>3</sub></sub> . . . * M<sub>worker<sub>n</sub></sub></p>
-<p style="text-align: center; font-family: georgia;">M<sub>upgrade<sub>total</sub></sub> = M<sub>upgrade<sub>1</sub></sub> * M<sub>upgrade<sub>2</sub></sub> * M<sub>upgrade<sub>3</sub></sub>  . . . * M<sub>upgrade<sub>n</sub></sub></p>
+<p style="text-align: center;">worker-Worker Production = worker-Worker * M<sub>worker<sub>total</sub></sub> * M<sub>upgrade<sub>total</sub></sub> * M<sub>prestige</sub></p> 
+<p style="text-align: center;">M<sub>worker<sub>total</sub></sub> = M<sub>worker<sub>1</sub></sub> * M<sub>worker<sub>2</sub></sub> * M<sub>worker<sub>3</sub></sub> . . . * M<sub>worker<sub>n</sub></sub></p>
+<p style="text-align: center;">M<sub>upgrade<sub>total</sub></sub> = M<sub>upgrade<sub>1</sub></sub> * M<sub>upgrade<sub>2</sub></sub> * M<sub>upgrade<sub>3</sub></sub>  . . . * M<sub>upgrade<sub>n</sub></sub></p>
 <br></br>
 <button class="upgrades_tickspeed" onClick="TickUpgrade(1)">Tick length x0.875<br>Currently: <span id=Tick>1000</span>ms</br>$<span id=TickUpgradeCost>10</span></button>
 <br></br><br></br>
-<p class="interface_upgrades"><button class="upgrades_workers" onClick="ZWorker_Upgrade_Tier1()"><p style="font-family: georgia;">M<sub>Z<sub>1</sub></sub> = <span id="MZ1">1</span></p> +1 <br>$<span id="ZUpgrade1Cost">10000</span></br></button></p>
+<p class="interface_upgrades"><button class="upgrades_workers" onClick="ZWorker_Upgrade_Tier1()">M<sub>Z<sub>1</sub></sub> = <span id="MZ1">1</span><br>Add 1 to M<sub>Z<sub>1</sub></sub></br>$<span id="ZUpgrade1Cost">10000</button></p>
 <br></br><br></br><br></br>
-<p class="interface_upgrades"><button class="upgrades_workers" onClick="YWorker_Upgrade_Tier1()"><p style="font-family: georgia;">M<sub>Y<sub>1</sub></sub> = <span id="MY1">1</span></p> +1 <br>$<span id="YUpgrade1Cost">15000</span></br></button></p>
+<p class="interface_upgrades"><button class="upgrades_workers" onClick="YWorker_Upgrade_Tier1()">M<sub>Y<sub>1</sub></sub> = <span id="MY1">1</span><br>Add 1 to M<sub>Y<sub>1</sub></sub></br>$<span id="YUpgrade1Cost">15000</button></p>
 <br></br><br></br><br></br>
-<div> <!--- -1 -->
 </div>
+</div>
+</div>
+
+<div id="interface_prestige">
+Prestige to add ??? to M<sub>prestige</sub>
+</div>
+
 
 <div id="interface_options">
 <button class="options_save" onClick="save()">Save</button>
 <button class="options_load" onClick="load()">Load</button>
+
+
 </div>
 
-</div>
-
-
 
 <br></br>
 <br></br>
+<br></br>
+<br></br>
 
-<br></br>
-<br></br>
 <p style="text-align: center;"><a href="https://github.com/mistertfy69/s-worker">Github</a> | <a href="https://www.patreon.com/mistertfy69">Donate</a></p>
 <script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="prestige.js"></script>

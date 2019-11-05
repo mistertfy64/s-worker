@@ -47,21 +47,27 @@ h1, h2 {
 	font-size: 16px;
 	position: absolute;
 	text-align: center;
-	left: 30px;
+	left: 300px;
+}
+
+.interface_prestige {
+	font-family: arial;
+	font-size: 16px;
+	position: absolute;
+	text-align: center;
+	left: 300px;
 }
 
 .upgrades_workers {
 	font-family: arial;
 	font-size: 16px;
-	padding: 2px 48px;
+	padding: 7px 56px;
 	background-color: #CCCCCC;
 	border: 3px soild #555555;
-	width: 325px;
+	width: 300px;
 	white-space: normal;
 	word-wrap: break-word;
 	font-size: 16px;
-	left: 300px;
-	position: absolute;
 	resize: none;
 }
 
