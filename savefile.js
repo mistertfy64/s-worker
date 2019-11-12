@@ -2,10 +2,10 @@
 
 function save(){
 	var savefile = {
-		Money: Money,
-		Tick: Tick,
-		TickUpgradesBought: TickUpgradesBought,
-		TickUpgradeCost: TickUpgradeCost,
+		money: money,
+		tick: tick,
+		tickupgradesBought: tickupgradesBought,
+		tickupgradeCost: tickupgradeCost,
 		
 		ZWorkers: ZWorkers,
 		ZWorkersBought: ZWorkersBought,
@@ -29,7 +29,7 @@ function save(){
 		
 		UWorkers: UWorkers,
 		UWorkersBought: UWorkersBought,
-		Mu1: Mu1,
+		MU1: MU1,
 		
 		TWorkers: TWorkers,
 		TWorkersBought: TWorkersBought,
@@ -39,8 +39,8 @@ function save(){
 		SWorkersBought: SWorkersBought,
 		MS1: MS1,
 		
-		PrestigeMultiplier: PrestigeMultiplier,
-		UpgradeMultiplier: UpgradeMultiplier,
+		prestigeMultiplier: prestigeMultiplier,
+		upgradeMultiplier: upgradeMultiplier,
 	}
 localStorage.setItem("savefile",JSON.stringify(savefile));
 }
@@ -48,11 +48,12 @@ localStorage.setItem("savefile",JSON.stringify(savefile));
 function load(){
 	var savegame = JSON.parse(localStorage.getItem("savefile"));
 	
-	if (typeof savegame.Money !== "undefined") Money = savegame.Money;
+	if (typeof savegame.money !== "undefined") money = savegame.money;
 	
-	if (typeof savegame.Tick !== "undefined") Tick = savegame.Tick;
-	if (typeof savegame.TickUpgradesBought !== "undefined") TickUpgradesBought = savegame.TickUpgradesBought;
-	if (typeof savegame.TickUpgradeCost !== "undefined") TickUpgradeCost = savegame.TickUpgradeCost;
+	if (typeof savegame.tick !== "undefined") tick = savegame.tick;
+	if (typeof savegame.tickupgradesBought !== "undefined") tickupgradesBought = savegame.tickupgradesBought;
+	if (typeof savegame.tickupgradeCost !== "undefined") tickupgradeCost = savegame.tickupgradeCost;
+	if (typeof savegame.Money !== "undefined") Money = Money;
 	
 	if (typeof savegame.ZWorkers !== "undefined") ZWorkers = savegame.ZWorkers;
 	if (typeof savegame.ZWorkersBought !== "undefined") ZWorkersBought = savegame.ZWorkersBought;
@@ -86,6 +87,6 @@ function load(){
 	if (typeof savegame.SWorkersBought !== "undefined") SWorkersBought = savegame.SWorkersBought;
 	if (typeof savegame.MS1 !== "undefined") MS1 = savegame.MS1;
 	
-	if (typeof savegame.PrestigeMultiplier !== "undefined") PrestigeMultiplier = savegame.PrestigeMultiplier;
-	if (typeof savegame.UpgradeMultiplier !== "undefined") UpgradeMultiplier = savegame.UpgradeMultiplier;
+	if (typeof savegame.prestigeMultiplier !== "undefined") Multiplier = savegame.prestigeMultiplier;
+	if (typeof savegame.upgradeMultiplier !== "undefined") upgradeMultiplier = savegame.upgradeMultiplier;
 }

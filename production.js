@@ -5,48 +5,49 @@
 
 
 window.setInterval(function(){
-	var ZWorkersProduction = (ZWorkers * MZ1 * UpgradeMultiplier * PrestigeMultiplier);
+	var ZWorkersProduction = (ZWorkers * MZ1 * upgradeMultiplier * prestigeMultiplier);
 	clickMoney(ZWorkersProduction);
 	document.getElementById("ZWorkersProduction").innerHTML = ZWorkersProduction;
 	
-	var YWorkersProduction = (YWorkers * MY1) * UpgradeMultiplier * PrestigeMultiplier;
+	var YWorkersProduction = (YWorkers * MY1) * upgradeMultiplier * prestigeMultiplier;
 	YTick(YWorkersProduction);
 	document.getElementById("YWorkersProduction").innerHTML = YWorkersProduction;
 	
-	var XWorkersProduction = (XWorkers * MX1 * UpgradeMultiplier * PrestigeMultiplier);
+	var XWorkersProduction = (XWorkers * MX1 * upgradeMultiplier * prestigeMultiplier);
 	XTick(XWorkersProduction);
 	document.getElementById("XWorkersProduction").innerHTML = XWorkersProduction;
 	
-	var WWorkersProduction = (WWorkers * MW1 * UpgradeMultiplier * PrestigeMultiplier);
+	var WWorkersProduction = (WWorkers * MW1 * upgradeMultiplier * prestigeMultiplier);
 	WTick(WWorkersProduction);
 	document.getElementById("WWorkersProduction").innerHTML = WWorkersProduction;
 	
-	var VWorkersProduction = (VWorkers * MV1 * UpgradeMultiplier * PrestigeMultiplier);
+	var VWorkersProduction = (VWorkers * MV1 * upgradeMultiplier * prestigeMultiplier);
 	VTick(VWorkersProduction);
 	document.getElementById("VWorkersProduction").innerHTML = VWorkersProduction;
 	
-	var UWorkersProduction = (UWorkers * Mu1 * UpgradeMultiplier * PrestigeMultiplier);
+	var UWorkersProduction = (UWorkers * MU1 * upgradeMultiplier * prestigeMultiplier);
 	UTick(UWorkersProduction);
 	document.getElementById("UWorkersProduction").innerHTML = UWorkersProduction;
 	
-	var TWorkersProduction = (TWorkers * MT1 * UpgradeMultiplier * PrestigeMultiplier);
+	var TWorkersProduction = (TWorkers * MT1 * upgradeMultiplier * prestigeMultiplier);
 	TTick(TWorkersProduction);
 	document.getElementById("TWorkersProduction").innerHTML = TWorkersProduction;
 	
-	var SWorkersProduction = (SWorkers * MS1 * UpgradeMultiplier * PrestigeMultiplier);
+	var SWorkersProduction = (SWorkers * MS1 * upgradeMultiplier * prestigeMultiplier);
 	STick(SWorkersProduction);
 	document.getElementById("SWorkersProduction").innerHTML = SWorkersProduction;
 	
-}, Tick);
+	
+}, 10);
 
 
 
 
 
-//Money Function
+//money Function
 function clickMoney(number){
-	Money = Money + number;
-	document.getElementById("Money").innerHTML = Money;
+	money = money + number;
+	document.getElementById("money").innerHTML = money;
 };
 //Y Production
 function YTick(number){

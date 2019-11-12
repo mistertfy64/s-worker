@@ -13,6 +13,7 @@ h1, h2 {
 	border: 3px solid #555555;
 	width: 275px;
 	right: 60px;
+	margin: auto;
 }
 
 .interface_worker {
@@ -22,16 +23,22 @@ h1, h2 {
 	left: 30px;
 }
 
+.interface_prestige {
+	font-family: arial;
+	font-size: 16px;
+	position: absolute;
+}
+
+
 .interface_button_money {
 	background-color: lime;
 	color: black;
 	font-family: arial;
 	padding: 8px 32px;
 	font-size: 16px;
-	position: absolute;
 	border: 3px solid #555555;
 	width: 200px;
-	left: 850px;
+	margin: auto;
 }
 	
 
@@ -50,7 +57,7 @@ h1, h2 {
 	left: 300px;
 }
 
-.interface_prestige {
+.interface_ {
 	font-family: arial;
 	font-size: 16px;
 	position: absolute;
@@ -81,6 +88,16 @@ h1, h2 {
 	font-size: 16px;
 	left: 850px;
 	position: absolute;
+}
+
+.prestige_button {
+	font-family: arial;
+	font-size: 16px;
+	padding: 7px 32px;
+	background-color: #CCCCCC;
+	border: 3px soild #555555;
+	text-align: center;
+	font-size: 16px;
 }
 
 .options_save {
