@@ -38,7 +38,7 @@ window.setInterval(function(){
 	document.getElementById("SWorkersProduction").innerHTML = SWorkersProduction;
 	
 	
-}, 10);
+}, 0.001);
 
 
 
