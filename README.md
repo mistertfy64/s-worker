@@ -1,8 +1,23 @@
 # s-worker
 unfinished idle game as off 10/19/2019
 
-
+GAME DEVELOPMENT HAS BEEN STOPPED
 PLAY TIERCREMENTAL INSTEAD mistertfy64.github.io/tiercremental
+PLAY TIERCREMENTAL INSTEAD mistertfy64.github.io/tiercremental
+PLAY TIERCREMENTAL INSTEAD mistertfy64.github.io/tiercremental
+PLAY TIERCREMENTAL INSTEAD mistertfy64.github.io/tiercremental
+PLAY TIERCREMENTAL INSTEAD mistertfy64.github.io/tiercremental
+PLAY TIERCREMENTAL INSTEAD mistertfy64.github.io/tiercremental
+PLAY TIERCREMENTAL INSTEAD mistertfy64.github.io/tiercremental
+PLAY TIERCREMENTAL INSTEAD mistertfy64.github.io/tiercremental
+
+
+
+
+
+
+
+
 S-Worker
 A really boring idle game that is unfinished, unplayable, unsafeable, and just blank.
 26 classes of workers (but now we only have 3) are waiting for you.
